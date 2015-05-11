@@ -5,7 +5,7 @@
 5"site_lang"pl_polski
 6"theme"default
 7"pepper"^LY7X*
-8"advanced_pages"0
+8"advanced_pages"1
 9"wysiwyg"1
 10"start_page"1
 11"footer"Copyright by Company
