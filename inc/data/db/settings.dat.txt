@@ -1,5 +1,5 @@
-1"title"Company
-2"description"Nunc bibendum turpis vel nulla vulputate
+1"title"Saga Zmierzch
+2"description"Zmierzch, Księzyc w Nowiu, Zaćmienie, Przed Świtem
 3"keywords"lekki cms, prosty cms, szybki cms
 4"admin_lang"pl_polski
 5"site_lang"pl_polski
