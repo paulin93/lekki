@@ -9,45 +9,48 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-<!-- Begin: #wrap -->
-<div id="wrap">
+<!-- Begin: #color_line -->
+<div id="color_line">
+	<div class="red"></div>
+	<div class="orange"></div>
+	<div class="violet"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+</div>
+<!-- End: #color_line -->
+
+<!-- Begin: #wrapper -->
+<div id="wrapper">
 	<!-- Begin: #header -->
 	<div id="header">
-		<h1>{{site.title}}</h1> <h2>{{site.description}}</h2>
+		<div class="wrap">
+			<h1>{{site.title}}</h1>
+		</div>
 	</div>
 	<!-- End: #header -->
-	<!-- Begin: #menu -->
-	<div id="menu">
-		<ul>
-		{{menu.top}}
-		</ul>
+
+	<div class="wrap">
+		<!-- Begin: #menu -->
+		<div id="menu">
+			<ul>
+			{{menu.top}}
+			</ul>
+		</div>
+		<!-- End: #menu-->
+		<!-- Begin: #content -->
+		<div id="content">
+			<h1>{{page.title}} <span class="icon orange">Z</span></h1>
+			{{page.content}}
+		</div>
+		<!-- End: #content -->
+
+		<!-- Begin: #footer -->
+		<div id="footer">
+			<span class="left">{{site.footer}} // Design by <a href="http://klocus.pl">Klocek</a> // {{lcms.footer}}</span> <span class="right">{{site.lang}}</span>
+		</div>
+		<!-- End: #footer -->
 	</div>
-	<!-- End: #menu-->
-	<!-- Begin: #content -->
-	<div id="content">
-		<h1>{{page.title}}</h1>
-		{{page.content}}
-	</div>
-	<!-- End: #menu -->
-	<!-- Begin .sidebar -->
-	<div class="sidebar">
-		<h1>Produkty</h1>
-		<ul>
-		{{menu.side}}
-		</ul>
-	</div>
-	<div class="sidebar">
-		<h1>Partnerzy</h1>
-		<p align="center">Miejsce na Twoją reklamę</p>
-	</div>
-	<!-- End .sidebar -->
-	<div style="clear: both;"></div>
-	<!-- Begin: #footer -->
-	<div id="footer">
-		<span class="left">{{site.footer}} | {{lcms.footer}}</span> <span class="right">{{site.lang}}</span>
-	</div>
-	<!-- End: #footer -->
 </div>
-<!-- End: #wrap -->
+<!-- End: #wrapper -->
 </body>
 </html>
